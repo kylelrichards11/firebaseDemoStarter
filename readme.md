@@ -113,6 +113,13 @@ FirebaseAuth.getInstance().signOut();
 # Test your code
 Build your code and run the app. In the main page of the app, click the “Sign Up” button. Fill in an email, password, and favorite color for a user and click the “Sign Up” button again. This should register a new user. Then, go back to the Firebase Console. Under the Users tab, your new user should appear in the list!
 
+## Troubleshooting 
+If your app is staying on the sign up screen and no error message is showing up, check android studio for this error.
+
+```firebaseinstanceid token retrieval failed service not available```
+
+If you have this error, your app may have lost connection to your Firebase project. Try uninstalling the app and turning off the AVD. Then run your app again and it should reconnect. 
+
 # Firebase Realtime Database
 ## Set up database writing
 In FirebaseWrapper.java, navigate to the getUserRef() function. Delete any existing code within the function, and add the following:
